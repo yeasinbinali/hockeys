@@ -1,11 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey's</title>     
+    <title>Hockey's</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        basic: '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    <h1>Hello</h1>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar bg-white mb-6">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <h3 class="text-3xl text-basic font-bold">Hockey's</h3>
+            </div>
+            <div class="navbar-center hidden md:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-circle bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn bg-basic text-white ml-5 hover:bg-basic">Get Ticket</button>
+            </div>
+        </nav>
+
+        <!-- carousel -->
+        <div class="carousel w-full mb-16">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="./Images/carousel1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+                <div class="w-1/2 bg-gray-800 absolute bottom-5 left-80 px-14 py-6 rounded-xl">
+                    <h4 class="text-white text-2xl font-bold">Meet all the heroes from the field</h4>
+                    <p class="text-white">Hockey: Gretzky, Lemieux. Pioneers: Howe, Orr. Goalies: Brodeur, Roy. Dynamic
+                        players, record-breakers, legends on the ice, hockey's cherished heroes.</p>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="./Images/carousel2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+                <div class="w-1/2 bg-basic absolute bottom-5 left-80 px-14 py-6 rounded-xl">
+                    <h4 class="text-white text-2xl font-bold">Meet all the heroes from the field</h4>
+                    <p class="text-white">Hockey: Gretzky, Lemieux. Pioneers: Howe, Orr. Goalies: Brodeur, Roy. Dynamic
+                        players, record-breakers, legends on the ice, hockey's cherished heroes.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <!-- professional hockey club -->
+        <section class="mb-24">
+            <div class="mt-8 text-center">
+                <h3 class="text-3xl font-bold">Professional Hockeys Club</h3>
+                <p class="w-2/3 mx-auto mt-4 mb-10">NHL teams: Competitive ice hockey clubs with storied histories,
+                    passionate fan bases, and skilled players vying for championships globally.</p>
+            </div>
+            <div class="grid grid-cols-4 gap-5">
+                <div class="flex flex-col items-center">
+                    <div class="radial-progress text-red-500" style="--value:87;" role="progressbar"><span
+                            class="text-black">87%</span></div>
+                    <h5 class="text-xl font-bold my-1 text-center">Prayer Facility</h5>
+                    <p class="text-center">Sacred space for silent reflection, worship</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="radial-progress text-green-500" style="--value:95;" role="progressbar"><span
+                            class="text-black">95%</span></div>
+                    <h5 class="text-xl font-bold my-1 text-center">Experienced Coach</h5>
+                    <p class="text-center">Guiding success, mentoring, shaping champions.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar"><span
+                            class="text-black">90%</span></div>
+                    <h5 class="text-xl font-bold my-1 text-center">Senior Player</h5>
+                    <p class="text-center">Veteran leader, skilled contributor, team cornerstone.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar"><span
+                            class="text-black">80%</span></div>
+                    <h5 class="text-xl font-bold my-1 text-center">Training Ground</h5>
+                    <p class="text-center">Field for learning, growth, excellence achieved.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- program clubs -->
+        <section>
+            <div class="text-center">
+                <h3 class="text-3xl font-bold">Program Sections</h3>
+                <p class="w-2/3 mx-auto mt-4 mb-10">Skills, Strategy, Fitness. Drills hone skating, shooting. Tactical
+                    plays teach teamwork. Conditioning ensures peak performance. Hockey excellence cultivated daily.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-5 mb-5">
+                <div class="relative w-full">
+                    <img class="w-full" style="filter: brightness(50%)" src="./Images/program1.png" alt="">
+                    <div class="absolute bottom-5 left-5">
+                        <h4 class="text-xl font-bold text-white">Junior Program</h4>
+                        <p class="text-white w-2/3 my-2">Youth development program cultivates talent. Skill-building,
+                            teamwork, sportsmanship emphasized.</p>
+                        <button class="btn bg-basic text-white border-0 hover:bg-basic">Register Now!</button>
+                    </div>
+                </div>
+                <div class="relative w-full">
+                    <img class="w-full" style="filter: brightness(50%)" src="./Images/program2.png" alt="">
+                    <div class="absolute bottom-5 left-5">
+                        <h4 class="text-xl font-bold text-white">Teenager Program</h4>
+                        <p class="text-white w-2/3 my-2">Skills refined, teamwork emphasized. Leadership cultivated.
+                            Fitness and mental resilience developed.</p>
+                        <button class="btn bg-basic text-white border-0 hover:bg-basic">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-full">
+                <img class="w-full" style="filter: brightness(50%); object-fit: cover;" src="./Images/carousel2.png" alt="">
+                <div class="absolute bottom-5 left-5">
+                    <h4 class="text-xl font-bold text-white">Teenager Program</h4>
+                    <p class="text-white w-2/3 my-2">Skills refined, teamwork emphasized. Leadership cultivated. Fitness
+                        and mental resilience developed.</p>
+                    <button class="btn bg-basic text-white border-0 hover:bg-basic">Register Now!</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>

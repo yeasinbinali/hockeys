@@ -1,0 +1,7 @@
+* {
+    font-family: 'Manrope', sans-serif;
+}
+header, main {
+    width: 90%;
+    margin: 0 auto;
+}
