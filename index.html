@@ -421,67 +421,82 @@
                 <p class="w-2/3 mx-auto mt-4 mb-10">Contact us easily! Reach out for inquiries, support, or
                     collaboration. Our team is ready to assist. Connect effortlessly for solutions</p>
             </div>
-            <div class="flex items-center gap-5 border-2 rounded-xl p-10">
-                <div>
+            <div class="flex items-center gap-5 p-10">
+                <div class="border-2 rounded-xl p-10 mr-10">
                     <div class="p-10 mb-5 rounded-xl" style="background-color: rgba(188, 237, 109, 0.10);">
                         <img src="./Images/call.png" alt="">
                         <div>
                             <p class="my-1">Phone Number</p>
-                            <h5>(+62) 123-321-543</h5>
+                            <h5 class="font-bold">(+62) 123-321-543</h5>
                         </div>
                     </div>
                     <div class="p-10 mb-5 rounded-xl" style="background-color: rgba(253, 221, 95, 0.10);">
                         <img src="./Images/message.png" alt="">
                         <div>
                             <p class="my-1">Email</p>
-                            <h5>hockeys@support.com</h5>
+                            <h5 class="font-bold">hockeys@support.com</h5>
                         </div>
                     </div>
                     <div class="p-10 rounded-xl" style="background-color: rgba(98, 156, 243, 0.10);">
                         <img src="./Images/location.png" alt="">
                         <div>
                             <p class="my-1">Location</p>
-                            <h5>152/1 Beijing Wireless Gate</h5>
+                            <h5 class="font-bold">152/1 Beijing Wireless Gate</h5>
                         </div>
                     </div>
                 </div>
                 <!-- input field -->
-                <div class="grid grid-cols-2 gap-5">
-                    <div>
-                        <label class="form-control w-full max-w-xs">
-                            <div class="label">
-                                <span class="label-text font-bold">Your Name</span>
-                            </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                        </label>
+                <div>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div>
+                            <label class="form-control">
+                                <div class="label">
+                                    <span class="label-text font-bold">Full Name</span>
+                                </div>
+                                <input type="text" placeholder="Enter Your Name" class="input input-bordered w-80" />
+                            </label>
+                        </div>
+                        <div>
+                            <label class="form-control">
+                                <div class="label">
+                                    <span class="label-text font-bold">Email</span>
+                                </div>
+                                <input type="email" placeholder="Enter Your Email" class="input input-bordered w-80" />
+                            </label>
+                        </div>
+                        <div>
+                            <label class="form-control">
+                                <div class="label">
+                                    <span class="label-text font-bold">Subject</span>
+                                </div>
+                                <input type="text" placeholder="Enter Your Subject" class="input input-bordered w-80" />
+                            </label>
+                        </div>
+                        <div>
+                            <label class="form-control">
+                                <div class="label">
+                                    <span class="label-text font-bold">Phone Number</span>
+                                </div>
+                                <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered w-80" />
+                            </label>
+                        </div>
                     </div>
-                    <div>
-                        <label class="form-control w-full max-w-xs">
+                    <div class="mt-3">
+                        <label class="form-control">
                             <div class="label">
-                                <span class="label-text font-bold">Your Email</span>
+                              <span class="label-text font-bold">Message</span>
                             </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                        </label>
+                            <textarea class="textarea textarea-bordered w-full h-96" placeholder="Your Message"></textarea>
+                          </label>
                     </div>
-                    <div>
-                        <label class="form-control w-full max-w-xs">
-                            <div class="label">
-                                <span class="label-text font-bold">Subject</span>
-                            </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                        </label>
-                    </div>
-                    <div>
-                        <label class="form-control w-full max-w-xs">
-                            <div class="label">
-                                <span class="label-text font-bold">Phone Number</span>
-                            </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                        </label>
+                    <div class="mt-3">
+                        <button class="btn bg-basic text-white w-full hover:bg-basic">Send Message</button>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- social icon -->
     </main>
     <footer>
 
