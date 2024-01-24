@@ -65,7 +65,7 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <button class="btn btn-circle bg-white">
+                <button class="btn btn-circle bg-white hidden lg:block">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -78,30 +78,37 @@
 
         <!-- carousel -->
         <div class="carousel w-full mb-16">
-            <div id="slide1" class="carousel-item relative w-full h-[200px] lg:h-full">
-                <img src="./Images/carousel1.png" class="w-full" />
+            <div id="slide1" class="carousel-item relative w-full h-[200px] lg:h-[500px]">
+                <img src="./Images/carousel1.png" class="w-full object-cover rounded-xl" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a>
                     <a href="#slide2" class="btn btn-circle">❯</a>
                 </div>
-                <div class="w-1/2 bg-gray-800 lg:absolute bottom-5 left-80 px-14 py-6 rounded-xl">
-                    <h4 class="text-white text-2xl font-bold">Meet all the heroes from the field</h4>
+                <div
+                    class="lg:w-1/2 bg-gray-800 hidden lg:block lg:absolute lg:bottom-5 lg:left-80 lg:px-14 lg:py-6 rounded-xl">
+                    <h4 class="text-white text-xs lg:text-2xl font-bold">Meet all the heroes from the field</h4>
                     <p class="text-white">Hockey: Gretzky, Lemieux. Pioneers: Howe, Orr. Goalies: Brodeur, Roy. Dynamic
                         players, record-breakers, legends on the ice, hockey's cherished heroes.</p>
                 </div>
             </div>
-            <div id="slide2" class="carousel-item relative w-full">
-                <img src="./Images/carousel2.png" class="w-full" />
+            <div id="slide2" class="carousel-item relative w-full h-[200px] lg:h-[500px]">
+                <img src="./Images/carousel2.png" class="w-full object-cover rounded-xl" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle">❮</a>
                     <a href="#slide3" class="btn btn-circle">❯</a>
                 </div>
-                <div class="w-1/2 bg-basic lg:absolute bottom-5 left-80 px-14 py-6 rounded-xl">
+                <div
+                    class="lg:w-1/2 bg-basic hidden lg:block lg:absolute lg:bottom-5 lg:left-80 lg:px-14 lg:py-6 rounded-xl">
                     <h4 class="text-white text-2xl font-bold">Meet all the heroes from the field</h4>
                     <p class="text-white">Hockey: Gretzky, Lemieux. Pioneers: Howe, Orr. Goalies: Brodeur, Roy. Dynamic
                         players, record-breakers, legends on the ice, hockey's cherished heroes.</p>
                 </div>
             </div>
+            <!-- <div class="lg:w-1/2 bg-gray-800 lg:hidden rounded-xl">
+                <h4 class="text-white text-xl font-bold">Meet all the heroes from the field</h4>
+                <p class="text-white text-xs">Hockey: Gretzky, Lemieux. Pioneers: Howe, Orr. Goalies: Brodeur, Roy.
+                    Dynamic players, record-breakers, legends on the ice, hockey's cherished heroes.</p>
+            </div> -->
         </div>
         <hr>
     </header>
@@ -110,34 +117,36 @@
         <!-- professional hockey club -->
         <section class="mb-16">
             <div class="mt-8 text-center">
-                <h3 class="text-3xl font-bold">Professional Hockeys Club</h3>
-                <p class="w-2/3 mx-auto mt-4 mb-10">NHL teams: Competitive ice hockey clubs with storied histories,
+                <h3 class="text-xl lg:text-3xl font-bold">Professional Hockeys Club</h3>
+                <p class="lg:w-2/3 mx-auto text-xs lg:text-lg mt-4 mb-10">NHL teams: Competitive ice hockey clubs with
+                    storied histories,
                     passionate fan bases, and skilled players vying for championships globally.</p>
             </div>
-            <div class="grid grid-cols-4 gap-5">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
                 <div class="flex flex-col items-center">
                     <div class="radial-progress text-red-500 rotate-180" style="--value:87;" role="progressbar"><span
                             class="text-black rotate-180">87%</span></div>
-                    <h5 class="text-xl font-bold my-1 text-center">Prayer Facility</h5>
-                    <p class="text-center">Sacred space for silent reflection, worship</p>
+                    <h5 class="text-base lg:text-xl font-bold my-1 text-center">Prayer Facility</h5>
+                    <p class="text-xs lg:text-base text-center">Sacred space for silent reflection, worship</p>
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="radial-progress text-green-500 rotate-180" style="--value:95;" role="progressbar"><span
                             class="text-black rotate-180">95%</span></div>
-                    <h5 class="text-xl font-bold my-1 text-center">Experienced Coach</h5>
-                    <p class="text-center">Guiding success, mentoring, shaping champions.</p>
+                    <h5 class="text-base lg:text-xl font-bold my-1 text-center">Experienced Coach</h5>
+                    <p class="text-xs lg:text-base text-center">Guiding success, mentoring, shaping champions.</p>
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="radial-progress text-yellow-500 rotate-180" style="--value:90;" role="progressbar"><span
                             class="text-black rotate-180">90%</span></div>
-                    <h5 class="text-xl font-bold my-1 text-center">Senior Player</h5>
-                    <p class="text-center">Veteran leader, skilled contributor, team cornerstone.</p>
+                    <h5 class="text-base lg:text-xl font-bold my-1 text-center">Senior Player</h5>
+                    <p class="text-xs lg:text-base text-center">Veteran leader, skilled contributor, team cornerstone.
+                    </p>
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="radial-progress text-blue-500 rotate-180" style="--value:80;" role="progressbar"><span
                             class="text-black rotate-180">80%</span></div>
-                    <h5 class="text-xl font-bold my-1 text-center">Training Ground</h5>
-                    <p class="text-center">Field for learning, growth, excellence achieved.</p>
+                    <h5 class="text-base lg:text-xl font-bold my-1 text-center">Training Ground</h5>
+                    <p class="text-xs lg:text-base text-center">Field for learning, growth, excellence achieved.</p>
                 </div>
             </div>
         </section>
@@ -146,36 +155,42 @@
         <!-- program clubs -->
         <section class="mb-16">
             <div class="text-center mt-8">
-                <h3 class="text-3xl font-bold">Program Sections</h3>
-                <p class="w-2/3 mx-auto mt-4 mb-10">Skills, Strategy, Fitness. Drills hone skating, shooting. Tactical
+                <h3 class="text-xl lg:text-3xl font-bold">Program Sections</h3>
+                <p class="lg:w-2/3 mx-auto text-xs lg:text-lg mt-4 mb-10">Skills, Strategy, Fitness. Drills hone
+                    skating, shooting. Tactical
                     plays teach teamwork. Conditioning ensures peak performance. Hockey excellence cultivated daily.</p>
             </div>
-            <div class="grid grid-cols-2 gap-5 mb-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5">
                 <div class="relative w-full">
-                    <img class="w-full" style="filter: brightness(50%)" src="./Images/program1.png" alt="">
+                    <img class="w-full h-[200px] lg:h-full" style="filter: brightness(50%)" src="./Images/program1.png"
+                        alt="">
                     <div class="absolute bottom-5 left-5">
-                        <h4 class="text-xl font-bold text-white">Junior Program</h4>
-                        <p class="text-white w-2/3 my-2">Youth development program cultivates talent. Skill-building,
+                        <h4 class="text-base lg:text-xl font-bold text-white">Junior Program</h4>
+                        <p class="text-white w-2/3 my-2 text-xs lg:text-base">Youth development program cultivates
+                            talent. Skill-building,
                             teamwork, sportsmanship emphasized.</p>
                         <button class="btn bg-basic text-white border-0 hover:bg-basic">Register Now!</button>
                     </div>
                 </div>
                 <div class="relative w-full">
-                    <img class="w-full" style="filter: brightness(50%)" src="./Images/program2.png" alt="">
+                    <img class="w-full h-[200px] lg:h-full" style="filter: brightness(50%)" src="./Images/program2.png"
+                        alt="">
                     <div class="absolute bottom-5 left-5">
-                        <h4 class="text-xl font-bold text-white">Teenager Program</h4>
-                        <p class="text-white w-2/3 my-2">Skills refined, teamwork emphasized. Leadership cultivated.
+                        <h4 class="text-base lg:text-xl font-bold text-white">Teenager Program</h4>
+                        <p class="text-white w-2/3 my-2 text-xs lg:text-base">Skills refined, teamwork emphasized.
+                            Leadership cultivated.
                             Fitness and mental resilience developed.</p>
                         <button class="btn bg-basic text-white border-0 hover:bg-basic">Register Now!</button>
                     </div>
                 </div>
             </div>
             <div class="relative w-full">
-                <img class="w-full" style="filter: brightness(50%); object-fit: cover;" src="./Images/carousel2.png"
-                    alt="">
+                <img class="w-full h-[200px] lg:h-full" style="filter: brightness(50%); object-fit: cover;"
+                    src="./Images/carousel2.png" alt="">
                 <div class="absolute bottom-5 left-5">
-                    <h4 class="text-xl font-bold text-white">Teenager Program</h4>
-                    <p class="text-white w-2/3 my-2">Skills refined, teamwork emphasized. Leadership cultivated. Fitness
+                    <h4 class="text-base lg:text-xl font-bold text-white">Teenager Program</h4>
+                    <p class="text-white w-2/3 my-2 text-xs lg:text-base">Skills refined, teamwork emphasized.
+                        Leadership cultivated. Fitness
                         and mental resilience developed.</p>
                     <button class="btn bg-basic text-white border-0 hover:bg-basic">Register Now!</button>
                 </div>
@@ -186,153 +201,197 @@
         <!-- products cart -->
         <section class="mb-16">
             <div class="text-center mt-6">
-                <h3 class="text-3xl font-bold">Our New Products</h3>
-                <p class="w-2/3 mx-auto mt-4 mb-10">Sleek design, cutting-edge technology. Enhanced features,
+                <h3 class="text-xl lg:text-3xl font-bold">Our New Products</h3>
+                <p class="text-xs lg:text-lg lg:w-2/3 mx-auto mt-4 mb-10">Sleek design, cutting-edge technology.
+                    Enhanced
+                    features,
                     user-friendly interface. Elevating experiences, exceeding expectations. Quality, style, and
                     functionality converge seamlessly.</p>
             </div>
-            <div class="grid grid-cols-2 gap-5">
-                <div class="flex items-center border-2 rounded-xl p-5 border-gray-300">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div class="lg:flex items-center border-2 rounded-xl p-5 border-gray-300">
                     <div>
-                        <img src="./Images/product1.png" alt="">
+                        <img class="w-[100%] h-[200px] lg:h-full object-cover rounded-xl" src="./Images/product1.png"
+                            alt="">
                     </div>
-                    <div class="ml-5">
+                    <div class="ml-0 mt-3 lg:mt-0 lg:ml-5">
                         <div class="flex items-center gap-5">
-                            <div>
-                                <i class="fa fa-star">5.0</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-yellow-500"></i>
+                                <p class="ml-2">5.0</p>
                             </div>
-                            <div>
-                                <i class="fa fa-eye">671</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-eye"></i>
+                                <p class="ml-2">671</p>
                             </div>
-                            <div>
-                                <i class="fa fa-heart">754</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-heart"></i>
+                                <p class="ml-2">754</p>
                             </div>
                         </div>
                         <h4 class="text-xl font-bold my-2">Hockey World Cup Jacket</h4>
                         <p>Official jacket: World Cup design, team pride showcased.</p>
-                        <div class="flex items-center gap-5 mt-2">
-                            <h5 class="text-basic font-bold">Price - $22.00</h5>
-                            <i class="fa fa-truck">Delivery Fee : Free</i>
+                        <div class="lg:flex items-center gap-5 mt-2">
+                            <h5 class="text-basic font-bold">Price - $22</h5>
+                            <div class="flex items-center mt-2 lg:mt-0">
+                                <i class="fa fa-truck"></i>
+                                <p class="ml-2">Delivery: Free</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center border-2 rounded-xl p-5 border-gray-300">
+                <div class="lg:flex items-center border-2 rounded-xl p-5 border-gray-300">
                     <div>
-                        <img src="./Images/product2.png" alt="">
+                        <img class="w-[100%] h-[200px] lg:h-full object-cover rounded-xl" src="./Images/product2.png"
+                            alt="">
                     </div>
-                    <div class="ml-5">
+                    <div class="ml-0 mt-3 lg:mt-0 lg:ml-5">
                         <div class="flex items-center gap-5">
-                            <div>
-                                <i class="fa fa-star">4.5</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-yellow-500"></i>
+                                <p class="ml-2">5.0</p>
                             </div>
-                            <div>
-                                <i class="fa fa-eye">569</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-eye"></i>
+                                <p class="ml-2">671</p>
                             </div>
-                            <div>
-                                <i class="fa fa-heart">890</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-heart"></i>
+                                <p class="ml-2">754</p>
                             </div>
                         </div>
                         <h4 class="text-xl font-bold my-2">Hockey Practice Ball</h4>
                         <p>Durable, high-bounce practice ball for hockey training sessions.</p>
-                        <div class="flex items-center gap-5 mt-2">
+                        <div class="lg:flex items-center gap-5 mt-2">
                             <h5 class="text-basic font-bold">Price - $18.00</h5>
-                            <i class="fa fa-truck">Delivery Fee : Free</i>
+                            <div class="flex items-center mt-2 lg:mt-0">
+                                <i class="fa fa-truck"></i>
+                                <p class="ml-2">Delivery Fee : Free</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center border-2 rounded-xl p-5 border-gray-300">
+                <div class="lg:flex items-center border-2 rounded-xl p-5 border-gray-300">
                     <div>
-                        <img src="./Images/product3.png" alt="">
+                        <img class="w-[100%] h-[200px] lg:h-full object-cover rounded-xl" src="./Images/product3.png"
+                            alt="">
                     </div>
-                    <div class="ml-5">
+                    <div class="ml-0 mt-3 lg:mt-0 lg:ml-5">
                         <div class="flex items-center gap-5">
-                            <div>
-                                <i class="fa fa-star">4.9</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-yellow-500"></i>
+                                <p class="ml-2">5.0</p>
                             </div>
-                            <div>
-                                <i class="fa fa-eye">459</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-eye"></i>
+                                <p class="ml-2">671</p>
                             </div>
-                            <div>
-                                <i class="fa fa-heart">804</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-heart"></i>
+                                <p class="ml-2">754</p>
                             </div>
                         </div>
                         <h4 class="text-xl font-bold my-2">Hockey World Cup Cap</h4>
                         <p>Stylish cap, emblematic World Cup design, sports enthusiast's choice.</p>
-                        <div class="flex items-center gap-5 mt-2">
-                            <h5 class="text-basic font-bold">Price - $12.00</h5>
-                            <i class="fa fa-truck">Delivery Fee : Free</i>
+                        <div class="lg:flex items-center gap-5 mt-2">
+                            <h5 class="text-basic font-bold">Price - $12</h5>
+                            <div class="flex items-center mt-2 lg:mt-0">
+                                <i class="fa fa-truck"></i>
+                                <p class="ml-2">Delivery: Free</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center border-2 rounded-xl p-5 border-gray-300">
+                <div class="lg:flex items-center border-2 rounded-xl p-5 border-gray-300">
                     <div>
-                        <img src="./Images/product4.png" alt="">
+                        <img class="w-[100%] h-[200px] lg:h-full object-cover rounded-xl" src="./Images/product4.png"
+                            alt="">
                     </div>
-                    <div class="ml-5">
+                    <div class="ml-0 mt-3 lg:mt-0 lg:ml-5">
                         <div class="flex items-center gap-5">
-                            <div>
-                                <i class="fa fa-star">5.0</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-yellow-500"></i>
+                                <p class="ml-2">5.0</p>
                             </div>
-                            <div>
-                                <i class="fa fa-eye">762</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-eye"></i>
+                                <p class="ml-2">671</p>
                             </div>
-                            <div>
-                                <i class="fa fa-heart">984</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-heart"></i>
+                                <p class="ml-2">754</p>
                             </div>
                         </div>
                         <h4 class="text-xl font-bold my-2">Hockey World Cup Jersey</h4>
                         <p>Iconic jersey: World Cup edition, team spirit celebrated.</p>
-                        <div class="flex items-center gap-5 mt-2">
-                            <h5 class="text-basic font-bold">Price - $15.00</h5>
-                            <i class="fa fa-truck">Delivery Fee : Free</i>
+                        <div class="lg:flex items-center gap-5 mt-2">
+                            <h5 class="text-basic font-bold">Price - $15</h5>
+                            <div class="flex items-center mt-2 lg:mt-0">
+                                <i class="fa fa-truck"></i>
+                                <p class="ml-2">Delivery: Free</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center border-2 rounded-xl p-5 border-gray-300">
+                <div class="lg:flex items-center border-2 rounded-xl p-5 border-gray-300">
                     <div>
-                        <img src="./Images/product5.png" alt="">
+                        <img class="w-[100%] h-[200px] lg:h-full object-cover rounded-xl" src="./Images/product5.png"
+                            alt="">
                     </div>
-                    <div class="ml-5">
+                    <div class="ml-0 mt-3 lg:mt-0 lg:ml-5">
                         <div class="flex items-center gap-5">
-                            <div>
-                                <i class="fa fa-star">4.8</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-yellow-500"></i>
+                                <p class="ml-2">5.0</p>
                             </div>
-                            <div>
-                                <i class="fa fa-eye">573</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-eye"></i>
+                                <p class="ml-2">671</p>
                             </div>
-                            <div>
-                                <i class="fa fa-heart">628</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-heart"></i>
+                                <p class="ml-2">754</p>
                             </div>
                         </div>
                         <h4 class="text-xl font-bold my-2">Hockey World Cup Helmet</h4>
                         <p>Protective helmet: World Cup design, safety for elite players.</p>
-                        <div class="flex items-center gap-5 mt-2">
-                            <h5 class="text-basic font-bold">Price - $30.00</h5>
-                            <i class="fa fa-truck">Delivery Fee : Free</i>
+                        <div class="lg:flex items-center gap-5 mt-2">
+                            <h5 class="text-basic font-bold">Price - $30</h5>
+                            <div class="flex items-center mt-2 lg:mt-0">
+                                <i class="fa fa-truck"></i>
+                                <p class="ml-2">Delivery: Free</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center border-2 rounded-xl p-5 border-gray-300">
+                <div class="lg:flex items-center border-2 rounded-xl p-5 border-gray-300">
                     <div>
-                        <img src="./Images/product6.png" alt="">
+                        <img class="w-[100%] h-[200px] lg:h-full object-cover rounded-xl" src="./Images/product6.png"
+                            alt="">
                     </div>
-                    <div class="ml-5">
+                    <div class="ml-0 mt-3 lg:mt-0 lg:ml-5">
                         <div class="flex items-center gap-5">
-                            <div>
-                                <i class="fa fa-star">5.0</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-yellow-500"></i>
+                                <p class="ml-2">5.0</p>
                             </div>
-                            <div>
-                                <i class="fa fa-eye">983</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-eye"></i>
+                                <p class="ml-2">671</p>
                             </div>
-                            <div>
-                                <i class="fa fa-heart">989</i>
+                            <div class="flex items-center">
+                                <i class="fa fa-heart"></i>
+                                <p class="ml-2">754</p>
                             </div>
                         </div>
                         <h4 class="text-xl font-bold my-2">Hockey World Cup Ball</h4>
                         <p>Precision-engineered ball, official World Cup design, ideal for play.</p>
-                        <div class="flex items-center gap-5 mt-2">
-                            <h5 class="text-basic font-bold">Price - $25.00</h5>
-                            <i class="fa fa-truck">Delivery Fee : Free</i>
+                        <div class="lg:flex items-center gap-5 mt-2">
+                            <h5 class="text-basic font-bold">Price - $25</h5>
+                            <div class="flex items-center mt-2 lg:mt-0">
+                                <i class="fa fa-truck"></i>
+                                <p class="ml-2">Delivery: Free</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -343,70 +402,77 @@
         <!-- client question (faq) -->
         <section class="mb-16">
             <div class="mt-6 text-center">
-                <h3 class="text-3xl font-bold">Frequently Asked Questions</h3>
-                <p class="w-2/3 mx-auto mt-4 mb-10">FAQ hockey: Rules, equipment, game play explained. Learn about
+                <h3 class="text-xl lg:text-3xl font-bold">Frequently Asked Questions</h3>
+                <p class="lg:w-2/3 mx-auto mt-4 mb-10 text-xs lg:text-lg">FAQ hockey: Rules, equipment, game play
+                    explained. Learn about
                     penalties, positions, and key terms. Enhance your hockey knowledge quickly.</p>
             </div>
-            <div class="flex items-center gap-5">
+            <div class="lg:flex items-center gap-5">
                 <div>
-                    <img src="./Images/faq.png" alt="">
+                    <img class="w-full mx-auto" src="./Images/faq.png" alt="">
                 </div>
-                <div>
+                <div class="mt-5 lg:mt-0">
                     <div class="collapse collapse-plus bg-slate-50 mb-2">
                         <input type="radio" name="my-accordion-3" checked="checked" />
-                        <div class="collapse-title text-xl font-bold">
+                        <div class="collapse-title text-base lg:text-xl font-bold">
                             What are the basic rules of hockey?
                         </div>
                         <div class="collapse-content">
-                            <p>Two teams compete to score goals by hitting a puck into the opponent's net using sticks.
+                            <p class="text-xs lg:text-base">Two teams compete to score goals by hitting a puck into the
+                                opponent's net using sticks.
                             </p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus bg-slate-50 mb-2">
                         <input type="radio" name="my-accordion-3" checked="checked" />
-                        <div class="collapse-title text-xl font-bold">
+                        <div class="collapse-title text-base lg:text-xl font-bold">
                             How many players are on a hockey team?
                         </div>
                         <div class="collapse-content">
-                            <p>Typically, a team has six players on the ice, including a goalie.</p>
+                            <p class="text-xs lg:text-base">Typically, a team has six players on the ice, including a
+                                goalie.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus bg-slate-50 mb-2">
                         <input type="radio" name="my-accordion-3" checked="checked" />
-                        <div class="collapse-title text-xl font-bold">
+                        <div class="collapse-title text-base lg:text-xl font-bold">
                             What is offside in hockey?
                         </div>
                         <div class="collapse-content">
-                            <p>Offside occurs when an attacking player enters the offensive zone ahead of the puck.</p>
+                            <p class="text-xs lg:text-base">Offside occurs when an attacking player enters the offensive
+                                zone ahead of the puck.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus bg-slate-50 mb-2">
                         <input type="radio" name="my-accordion-3" checked="checked" />
-                        <div class="collapse-title text-xl font-bold">
+                        <div class="collapse-title text-base lg:text-xl font-bold">
                             What is icing in hockey?
                         </div>
                         <div class="collapse-content">
-                            <p>Icing is when a player shoots the puck from their side of the center line to the
+                            <p class="text-xs lg:text-base">Icing is when a player shoots the puck from their side of
+                                the center line to the
                                 opponent's goal line.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus bg-slate-50 mb-2">
                         <input type="radio" name="my-accordion-3" checked="checked" />
-                        <div class="collapse-title text-xl font-bold">
+                        <div class="collapse-title text-base lg:text-xl font-bold">
                             How long is a standard hockey game?
                         </div>
                         <div class="collapse-content">
-                            <p>In professional hockey, a game consists of three periods, each lasting 20 minutes, with
+                            <p class="text-xs lg:text-base">In professional hockey, a game consists of three periods,
+                                each lasting 20 minutes, with
                                 intermissions between.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus bg-slate-50">
                         <input type="radio" name="my-accordion-3" checked="checked" />
-                        <div class="collapse-title text-xl font-bold">
+                        <div class="collapse-title text-base lg:text-xl font-bold">
                             What is a hat trick in hockey?
                         </div>
                         <div class="collapse-content">
-                            <p>A hat trick is when a player scores three goals in a single game.</p>
+                            <p class="text-xs lg:text-base">A hat trick is when a player scores three goals in a single
+                                game.</p>
                         </div>
                     </div>
                 </div>
@@ -417,12 +483,13 @@
         <!-- get in touch -->
         <section class="mb-16">
             <div class="mt-8 text-center">
-                <h3 class="text-3xl font-bold">Get in Touch</h3>
-                <p class="w-2/3 mx-auto mt-4 mb-10">Contact us easily! Reach out for inquiries, support, or
+                <h3 class="text-xl lg:text-3xl font-bold">Get in Touch</h3>
+                <p class="lg:w-2/3 mx-auto mt-4 mb-10 text-xs lg:text-lg">Contact us easily! Reach out for inquiries,
+                    support, or
                     collaboration. Our team is ready to assist. Connect effortlessly for solutions</p>
             </div>
-            <div class="lg:flex justify-between items-center gap-5">
-                <div class="border-2 rounded-xl p-10 mr-10">
+            <div class="lg:flex justify-evenly items-center gap-5">
+                <div class="border-2 rounded-xl p-5 lg:p-10 mr-0 lg:mr-10">
                     <div class="p-10 mb-5 rounded-xl" style="background-color: rgba(188, 237, 109, 0.10);">
                         <img src="./Images/call.png" alt="">
                         <div>
@@ -446,14 +513,14 @@
                     </div>
                 </div>
                 <!-- input field -->
-                <div>
-                    <div class="grid grid-cols-2 gap-5">
+                <div class="mt-3 lg:mt-0">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
                         <div>
                             <label class="form-control">
                                 <div class="label">
                                     <span class="label-text font-bold">Full Name</span>
                                 </div>
-                                <input type="text" placeholder="Enter Your Name" class="input input-bordered lg:w-96" />
+                                <input type="text" placeholder="Enter Your Name" class="input input-bordered lg:w-64" />
                             </label>
                         </div>
                         <div>
@@ -461,7 +528,8 @@
                                 <div class="label">
                                     <span class="label-text font-bold">Email</span>
                                 </div>
-                                <input type="email" placeholder="Enter Your Email" class="input input-bordered lg:w-96" />
+                                <input type="email" placeholder="Enter Your Email"
+                                    class="input input-bordered lg:w-64" />
                             </label>
                         </div>
                         <div>
@@ -469,7 +537,8 @@
                                 <div class="label">
                                     <span class="label-text font-bold">Subject</span>
                                 </div>
-                                <input type="text" placeholder="Enter Your Subject" class="input input-bordered lg:w-96" />
+                                <input type="text" placeholder="Enter Your Subject"
+                                    class="input input-bordered lg:w-64" />
                             </label>
                         </div>
                         <div>
@@ -478,7 +547,7 @@
                                     <span class="label-text font-bold">Phone Number</span>
                                 </div>
                                 <input type="text" placeholder="Enter Your Phone Number"
-                                    class="input input-bordered lg:w-96" />
+                                    class="input input-bordered lg:w-64" />
                             </label>
                         </div>
                     </div>
@@ -487,7 +556,7 @@
                             <div class="label">
                                 <span class="label-text font-bold">Message</span>
                             </div>
-                            <textarea class="textarea textarea-bordered w-full h-96"
+                            <textarea class="textarea textarea-bordered w-full h-40 lg:h-96"
                                 placeholder="Your Message"></textarea>
                         </label>
                     </div>
@@ -501,7 +570,7 @@
         <!-- social icon -->
         <section class="mb-16">
             <div class="text-center bg-gray-200 p-10 rounded-xl">
-                <h4 class="text-2xl font-bold">Social Media</h4>
+                <h4 class="text-xl lg:text-2xl font-bold">Social Media</h4>
                 <div class="flex justify-center mt-5 gap-5">
                     <i class="fa fa-twitter"></i>
                     <i class="fa fa-facebook-f"></i>
@@ -514,36 +583,43 @@
     </main>
     <!-- footer -->
     <footer class="bg-[#131318] text-white">
-        <section class="footer w-[90%] mx-auto py-20">
-            <aside>
-                <h3 class="text-3xl font-bold">Get in Touch</h3>
-                <p class="my-3">NHL teams: Competitive ice hockey clubs with storied histories, passionate fan bases.</p>
+        <section class="flex items-center flex-col lg:flex lg:flex-row gap-20 footer w-[90%] mx-auto py-20">
+            <aside class="w-1/2">
+                <h3 class="text-xl lg:text-3xl font-bold">Get in Touch</h3>
+                <p class="my-3 text-xs lg:text-lg">NHL teams: Competitive ice hockey clubs with storied histories,
+                    passionate fan bases.
+                </p>
                 <div class="flex items-center gap-2">
-                    <i class="fa fa-envelope text-basic"></i><p>hockeys@support.com</p>
+                    <i class="fa fa-envelope text-basic"></i>
+                    <p>hockeys@support.com</p>
                 </div>
                 <div class="flex items-center gap-2">
-                    <i class="fa fa-phone text-basic"></i><p>(+62) 123-321-543</p>
+                    <i class="fa fa-phone text-basic"></i>
+                    <p>(+62) 123-321-543</p>
                 </div>
             </aside>
-            <nav>
-                <header class="footer-title">Services</header>
-                <a class="link link-hover">Branding</a>
-                <a class="link link-hover">Design</a>
-                <a class="link link-hover">Marketing</a>
-                <a class="link link-hover">Advertisement</a>
-            </nav>
-            <nav>
-                <header class="footer-title">Company</header>
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Jobs</a>
-                <a class="link link-hover">Press kit</a>
-            </nav>
+            <div class="flex gap-20">
+                <nav class="flex flex-col">
+                    <header class="footer-title">Services</header>
+                    <a class="link link-hover mt-2">Branding</a>
+                    <a class="link link-hover mt-2">Design</a>
+                    <a class="link link-hover mt-2">Marketing</a>
+                    <a class="link link-hover mt-2">Advertisement</a>
+                </nav>
+                <nav class="flex flex-col">
+                    <header class="footer-title">Company</header>
+                    <a class="link link-hover mt-2">About us</a>
+                    <a class="link link-hover mt-2">Contact</a>
+                    <a class="link link-hover mt-2">Jobs</a>
+                    <a class="link link-hover mt-2">Press kit</a>
+                </nav>
+            </div>
             <nav>
                 <header class="footer-title">Legal</header>
                 <a class="link link-hover">Terms of use</a>
                 <a class="link link-hover">Privacy policy</a>
                 <a class="link link-hover">Cookie policy</a>
+                <a class="link link-hover">Rules & Regulations</a>
             </nav>
         </section>
     </footer>
